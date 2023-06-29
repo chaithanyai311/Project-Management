@@ -1,0 +1,148 @@
+@import '../../main-styles.scss';
+  
+ .add-project-button {
+    position: absolute;
+    right: 0px;
+    top:90px;
+
+    .button{
+        background-color: $blue;
+        color: white;
+        padding: 20px 40px;
+    }
+
+    .button:hover{
+        background-color: rgb(42, 108, 207);
+    }
+  }
+  .project-table{
+    position: absolute;
+    top: 120px;
+    padding: 30px 40px;
+    width: 85%;
+    .table{
+        background-color: $grey;
+    }
+  }
+
+  .add-project{
+    position: absolute;
+    top: 360px;
+    padding: 20px 40px;
+    background-color: rgb(236, 208, 146);
+    width: 78%;
+    margin: 20px 45px;
+
+    .button {
+        padding: 8px 16px;
+        background-color: $blue;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+        
+      .button:hover{
+          background-color: rgb(42, 108, 207);
+      }
+  }
+
+  .view-buttons {
+    transition: opacity 0.2s, transform 0.2s ease;
+    transform: scale(0.85);
+  }
+
+  .hoverable-row:hover .view-buttons {
+    opacity: 1;
+  }
+
+  .view-buttons button {
+    visibility: hidden;
+  }
+  
+  .hoverable-row:hover .view-buttons button {
+    visibility: visible;
+  }
+
+  .buttonclass{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  th, td {
+    display: table-cell;
+    padding-left: 40px;
+  }
+
+  tr {
+    display: table-row;
+    //padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    align-items: center;
+  }
+  
+  tr:hover {
+    box-shadow: 0 0 0 2px rgb(180, 179, 179);
+  }
+
+  label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+  }
+  input {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 250px;
+  }
+
+  select{
+    border-color: #ccc;
+    padding: 6px;
+    width: 80px;
+    border-radius: 4px;
+  }
+
+  .row{
+    margin-bottom: 5px;
+  }
+
+  .button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -50px;
+}
+
+
+.update-project{
+  position: absolute;
+  top: 360px;
+  padding: 20px 40px;
+  background-color: rgb(236, 208, 146);
+  width: 78%;
+  margin: 20px 45px;
+
+  .button {
+      padding: 8px 16px;
+      background-color: $blue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+      
+    .button:hover{
+        background-color: rgb(42, 108, 207);
+    }
+} 
+  
+  
+  
+ 
+  

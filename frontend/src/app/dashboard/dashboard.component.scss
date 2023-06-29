@@ -1,0 +1,136 @@
+@import '../../main-styles.scss';
+
+.title{
+    font-family: 'Lato';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $blue;
+    justify-content: center;
+}
+.home-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    max-height: 520px;
+    background: white;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background: $grey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main-list-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 42px;
+    
+    .title{
+        margin: 0;
+    }
+    .top-bar {
+        display: flex;
+        .title {
+            flex-grow: 1;
+        }
+    }
+}
+
+.list-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    flex-grow: 1;
+
+    .list-menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 15px;
+        width: 100%;
+        color: white;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        background-color: $blue;
+
+        &:hover {
+            background: $green;
+        }
+
+       &.is-active {
+            background-color: $green;
+            color: white;
+        }
+        
+    }
+    
+
+}
+
+.list-menu-item.active {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+.buttontop{
+    margin-top: 100px;
+    margin-left: 10px;
+
+    .button{
+        background-color: $grey;
+        margin-left: 90px;
+        padding: 40px 40px;
+    }
+}
+
+.buttonbottom{
+    margin-top: 100px;
+    margin-left: 100px;
+
+    .button{
+        background-color: $grey;
+        margin-right: 80px;
+        padding: 50px 160px;
+    }
+}
+
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+    h2{
+        font-size: 30px;
+        color: gray;
+    }
+    h1{
+        font-size: 20px;
+        
+    }
+  }
+  
+  .close-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  
