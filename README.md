@@ -1,2 +1,2 @@
 # project-management
-Angular, Nodejs and MongoDB
+Full stack project using Angular, Nodejs and MongoDB
