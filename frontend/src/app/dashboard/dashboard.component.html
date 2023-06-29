@@ -1,0 +1,79 @@
+
+<div class="centered-content">
+    <div class="home-container">
+      <div class="sidebar">
+        <div class="top-bar">
+          <h1 class="title"></h1>
+        </div>
+        <div class="list-menu">
+          <a class="list-menu-item" [class.active]="selectedComponent === 'dashboard'" (click)="showComponent('dashboard')" [class.is-active]="activeTab === 'dashboard'" (click)="activeTab = 'dashboard'">
+            <p>Dashboard</p>
+          </a>
+          <a class="list-menu-item" [class.active]="selectedComponent === 'add-project'" (click)="showComponent('add-project')" [class.is-active]="activeTab === 'add-project'" (click)="activeTab = 'add-project'">
+            <p>Add Project</p>
+          </a>
+          <a class="list-menu-item" [class.active]="selectedComponent === 'add-team'" (click)="showComponent('add-team')" [class.is-active]="activeTab === 'add-team'" (click)="activeTab = 'add-team'">
+            <p>Add Team</p>
+          </a>
+          <a class="list-menu-item" [class.active]="selectedComponent === 'add-task'" (click)="showComponent('add-task')" [class.is-active]="activeTab === 'add-task'" (click)="activeTab = 'add-task'">
+            <p>Add Task</p>
+          </a>
+          <a class="list-menu-item" [class.active]="selectedComponent === 'add-team-member'" (click)="showComponent('add-team-member')" [class.is-active]="activeTab === 'add-team-member'" (click)="activeTab = 'add-team-member'">
+            <p>Add Team Member</p>
+          </a>
+        </div>
+      </div>
+      <div class="main-container">
+        <div *ngIf="selectedComponent === 'dashboard'" id="dashboard" class="component" >
+          <div class="top">
+            <div class="column-container">
+              <div class="column-item">
+                <h1>Total Projects:</h1>
+                <h2>{{ totalProjects }}</h2>
+              </div>
+              <div class="column-item">
+                <h1>Total Tasks:</h1>
+                <h2>{{ totalTasks }}</h2>
+             </div>
+              <div class="column-item">
+                <h1>Total Teams:</h1>
+                <h2>{{ totalTeams }}</h2>
+              </div>
+              <div class="column-item">
+                <h1>Productivity</h1>
+              </div>
+            </div>
+          </div>
+            <div class="bottom">
+              <div class="column-container">
+                <div class="column-item">
+                  <div id="team-chart-container"></div>
+                </div>
+                <div class="column-item">
+                  <div id="project-chart-container"></div>
+                </div>
+              </div>
+           </div>
+        </div>
+  
+        <div *ngIf="selectedComponent === 'add-project'" id="add-project" class="component">
+          <app-add-project></app-add-project>
+        </div>
+  
+        <div *ngIf="selectedComponent === 'add-team'" id="add-team" class="component">
+          <app-add-team></app-add-team>
+        </div>
+  
+        <div *ngIf="selectedComponent === 'add-task'" id="add-task" class="component">
+          <app-add-task></app-add-task>
+        </div>
+  
+        <div *ngIf="selectedComponent === 'add-team-member'" id="add-team-member" class="component">
+          <app-add-teammember></app-add-teammember>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  
